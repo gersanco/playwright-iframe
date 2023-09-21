@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -108,6 +108,21 @@ export default function Home() {
           </p>
         </a>
       </div>
+      <div style={{ height: '100vh' }}></div>
+      <div className="mt-2">
+        <div>
+          <h2 className="text-2xl font-semibold">Video</h2>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/z0SILkRtMzM?si=Lsi4JRte1akxLdxj"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
     </main>
-  )
+  );
 }
